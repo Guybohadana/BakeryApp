@@ -24,7 +24,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 
-# First page - Login (with validity of user name and password)
+# First page - Login (with validity of username and password)
 @app.route('/', methods=['POST', 'GET'])
 def main():
     if request.method == "POST":
