@@ -4,7 +4,8 @@ import psycopg2
 from flask_migrate import Migrate
 
 # Customer and Product list from DB - into a dictionary
-customer = ["קפה קפה", "לחמים", "המשפחה"]
+customer = ["קפה קפה", "יענקלה", "סאן קפה", "דנדי"]
+
 product = []
 first_connect = psycopg2.connect(host='localhost', database='bakery', user='postgres', password='123', port='5432')
 cursor = first_connect.cursor()
